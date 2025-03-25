@@ -8,34 +8,35 @@
   <meta name="author" content="AgroProducts">
   <title>AgroProducts Blog</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body class="blog-page">
   <!-- Navbar -->
-  <nav>
-    <!-- Logo on the left -->
+  <nav class="sticky-nav">
     <div class="logo">
       <a href="index.html">AgroProducts</a>
     </div>
-  
-    <!-- Centered navigation links -->
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="index.html#about">About Us</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  
-    <!-- Hamburger menu for mobile -->
-    <div class="menu-toggle">
+    <div class="menu-toggle" id="mobile-menu">
       <span></span>
       <span></span>
       <span></span>
     </div>
+    <ul class="nav-list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html#about">About Us</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
   </nav>
+
   <!-- Blog Banner -->
   <header class="banner">
-    <h1>AgroProducts Blog</h1>
-    <p>Stay updated with the latest trends and tips in agriculture.</p>
+    <div class="banner-overlay"></div>
+    <div class="banner-content">
+      <h1>AgroProducts Blog</h1>
+      <p>Stay updated with the latest trends and tips in agriculture.</p>
+    </div>
   </header>
 
   <!-- Blog Content -->
@@ -45,26 +46,52 @@
       <div class="blog-left">
         <h2>Recent Posts</h2>
         <ul>
-          <li><a href="#">Top 5 Eco-Friendly Farming Practices in 2025</a></li>
-          <li><a href="#">How to Choose the Right Fertilizer for Your Crops</a></li>
-          <li><a href="#">The Future of Organic Farming</a></li>
+          <li>
+            <a href="#">
+              <img src="images/eco-friendly-farming.jpg" alt="Eco-Friendly Farming">
+              <h3>Top 5 Eco-Friendly Farming Practices in 2025</h3>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/fertilizer.jpg" alt="Choosing Fertilizer">
+              <h3>How to Choose the Right Fertilizer for Your Crops</h3>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="images/organic-farming.jpg" alt="Organic Farming">
+              <h3>The Future of Organic Farming</h3>
+            </a>
+          </li>
         </ul>
       </div>
 
       <!-- Right Column (Main Content) -->
       <div class="blog-right">
-        
-        <h2>Top 5 Eco-Friendly Farming Practices in 2025</h2>
-        <p>Discover the latest trends in eco-friendly farming and how AgroProducts can help you achieve sustainable agriculture.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <article>
+          <img src="images/eco-friendly-farming.jpg" alt="Eco-Friendly Farming">
+          <h2>Top 5 Eco-Friendly Farming Practices in 2025</h2>
+          <p>Discover the latest trends in eco-friendly farming and how AgroProducts can help you achieve sustainable agriculture.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <a href="#" class="whatsapp-button">Read More</a>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 AgroProducts. All rights reserved.</p>
-    <p>Email: support@agroproducts.com | WhatsApp: +123 456 7890</p>
+    <div class="footer-content">
+      <p>&copy; 2025 AgroProducts. All rights reserved.</p>
+      <p>Email: support@agroproducts.com | WhatsApp: +123 456 7890</p>
+      <div class="social-links">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+      
+    </div>
   </footer>
 
   <script src="script.js"></script>

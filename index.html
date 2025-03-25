@@ -10,33 +10,48 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <nav>
-    <div class="logo">
-      <a href="index.html">AgroProducts</a>
-     
-    </div>
-    <!-- Hamburger Menu Toggle -->
-    <div class="menu-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+ <!-- Navbar -->
+<nav>
+  <div class="logo">
+    <a href="index.html">AgroProducts</a>
+  </div>
 
-    <h3>+233 543 999 580</h3>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </nav>
+  <!-- Menu Toggle -->
+  <div class="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#about">About Us</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+
+    <!-- Categories Dropdown in Navbar -->
+    <li class="dropdown">
+      <a href="#" class="dropdown-button">Categories</a>
+      <ul class="dropdown-list">
+        <li><a href="index.html">Weedicides</a></li>
+        <li><a href="insecticides.html">Biological Insecticides</a></li>
+        <li><a href="fertilizers.html">Organic Fertilizers (Liquid)</a></li>
+        <li><a href="fertilizers-kg.html">Fertilizers (in kg)</a></li>
+        <li><a href="fungicides.html">Fungicides</a></li>
+        <li><a href="sprayers.html">Knapsack Sprayers</a></li>
+        <li><a href="motorblow.html">Motorblow</a></li>
+        <li><a href="seeds.html">Vegetable Seeds</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
 
   <!-- Categories Sidebar -->
   <aside class="categories-sidebar">
     <h2>Categories</h2>
     <ul>
-      <li><a href="#home">Weedicides</a></li>
+      <li><a href="index.html">Weedicides</a></li>
       <li><a href="insecticides.html">Biological Insecticides</a></li>
       <li><a href="fertilizers.html">Organic Fertilizers (Liquid)</a></li>
       <li><a href="fertilizers-kg.html">Fertilizers (in kg)</a></li>
@@ -171,7 +186,7 @@
   <!-- About Us Section -->
   <section id="about" class="about-us">
     <div class="about-banner">
-      <img src="images/about-banner.jpg" alt="About Us Banner">
+      <img src="images/about-us.jpg" alt="About Us Banner">
       <div class="about-text">
         <h2>About Us</h2>
         <p>AgroProducts is a leading provider of high-quality agricultural solutions. We are committed to helping farmers achieve better yields with eco-friendly and sustainable products.</p>
@@ -185,8 +200,32 @@
   <footer>
     <p>&copy; 2025 AgroProducts. All rights reserved.</p>
     <p>Email: support@agroproducts.com | WhatsApp: +123 456 7890</p>
+    
   </footer>
 
   <script src="script.js"></script>
+  <!-- Bottom Navigation for Mobile -->
+<!-- Bottom Navigation -->
+<div class="bottom-nav">
+  <!-- <a href="index.html" class="nav-item">Home</a>
+  <a href="index.html#about" class="nav-item">About</a>
+  <a href="blog.html" class="nav-item">Blog</a>
+  <a href="contact.html" class="nav-item">Contact</a> -->
+  <a href="index.html"class="nav-item">Weedicides</a></li>
+  <a href="insecticides.html"class="nav-item">Biological Insecticides</a>
+  <a href="fertilizers.html"class="nav-item">Organic Fertilizers (Liquid)</a>
+  <a href="fertilizers-kg.html"class="nav-item">Fertilizers (in kg)</a>
+  <a href="fungicides.html"class="nav-item">Fungicides</a>
+  <a href="sprayers.html"class="nav-item">Knapsack Sprayers</a>
+  <a href="motorblow.html"class="nav-item">Motorblow</a>
+  <a href="seeds.html"class="nav-item">Vegetable Seeds</a>
+  <!-- Categories Button -->
+ 
+    
+      
+    
+  </div>
+</div>
+
 </body>
 </html>
